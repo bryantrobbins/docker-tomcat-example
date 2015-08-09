@@ -7,7 +7,7 @@ For more details on the tomcat image, you can also view its page on [Docker Hub]
 
 # How
 
-The Dockerfile here defines a new image, "bryantrobbins/docker-example-tomcat", which starts from a base of
+The Dockerfile here defines a new image, "bryantrobbins/docker-tomcat-example", which starts from a base of
 the tomcat:8.0 image. It then adds a tomcat-users.xml file to the Tomcat install location. You can do things
 similar to this to stage any such static files that would be constant across your running Tomcat containers.
 
