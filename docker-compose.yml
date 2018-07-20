@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+
+  tomcat7:
+    #restart: always
+    image: tomcat:7
+    volumes:
+      - ./tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml:Z
+    ports:
+      - "8087:8080"
+    container_name: tomcat-7-users     
+
+
+  tomcat8:
+    #restart: always
+    image: tomcat:8.0
+    volumes:
+      - ./tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml:Z
+    ports:
+      - "8088:8080"
+    container_name: tomcat-8-users      
+ 
